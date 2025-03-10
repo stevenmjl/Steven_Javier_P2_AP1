@@ -10,7 +10,7 @@ namespace Steven_Javier_P2_AP1.Models
         [MaxLength(60, ErrorMessage = "No mayor de 60 letras")]
         public string? Asignatura { get; set; }
         [Required]
-        public DateTime Fecha { get; set; }
+        public DateTime Fecha { get; set; } = DateTime.Now;
         [Required(ErrorMessage = "Debe haber un monto")]
         [Range(1,200000, ErrorMessage = "Desde 1 hasta 200,000")]
         public double Monto { get; set; }
