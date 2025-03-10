@@ -10,7 +10,9 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 var ConStr = builder.Configuration.GetConnectionString("ConStr");
-builder.Services.AddDbContext<Contexto>(Options => Options.UseSqlite(ConStr));
+builder.Services.AddDbContextFactory<Contexto>(o => o.UseSqlServer(ConStr));
+
+// Inyectando el service de Aportes
 builder.Services.AddScoped<EncuestaService>();
 
 var app = builder.Build();
