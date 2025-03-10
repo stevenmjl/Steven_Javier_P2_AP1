@@ -23,6 +23,12 @@ public class Contexto : DbContext
                     Id = 2,
                     Nombre = "Santo Domingo",
                     Monto = 999000000
+                },
+                new()
+                {
+                    Id = 3,
+                    Nombre = "La Vega",
+                    Monto = 80000000
                 }
             }
         );
