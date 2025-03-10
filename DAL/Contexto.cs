@@ -16,19 +16,19 @@ public class Contexto : DbContext
                 {
                     Id = 1,
                     Nombre = "Moca",
-                    Monto = 50000000
+                    Monto = 14000
                 },
                 new()
                 {
                     Id = 2,
                     Nombre = "Santo Domingo",
-                    Monto = 999000000
+                    Monto = 35000
                 },
                 new()
                 {
                     Id = 3,
                     Nombre = "La Vega",
-                    Monto = 80000000
+                    Monto = 20000
                 }
             }
         );
