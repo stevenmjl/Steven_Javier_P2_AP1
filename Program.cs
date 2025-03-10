@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Steven_Javier_P1_AP1.Services;
 using Steven_Javier_P2_AP1.Components;
 using Steven_Javier_P2_AP1.DAL;
-using Steven_Javier_P2_AP1.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +11,7 @@ builder.Services.AddRazorComponents()
 
 var ConStr = builder.Configuration.GetConnectionString("ConStr");
 builder.Services.AddDbContext<Contexto>(Options => Options.UseSqlite(ConStr));
-builder.Services.AddScoped<Estudiantes>();
+builder.Services.AddScoped<EncuestaService>();
 
 var app = builder.Build();
 
