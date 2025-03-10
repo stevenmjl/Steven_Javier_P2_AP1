@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using Steven_Javier_P2_AP1.DAL;
 using Steven_Javier_P2_AP1.Models;
 
-namespace Steven_Javier_P1_AP1.Services;
+namespace Steven_Javier_P2_AP1.Services;
 
 public class EncuestaService(IDbContextFactory<Contexto> DbFactory)
 {
