@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Steven_Javier_P1_AP1.Services;
 using Steven_Javier_P2_AP1.Models;
 
 namespace Steven_Javier_P2_AP1.DAL;
@@ -6,6 +7,7 @@ namespace Steven_Javier_P2_AP1.DAL;
 public class Contexto : DbContext
 {
     public Contexto(DbContextOptions<Contexto> options) : base(options) { }
+    public DbSet<Encuesta> Encuestas { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
